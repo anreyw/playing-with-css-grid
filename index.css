@@ -3,22 +3,15 @@ html, body {
     padding: 0;
 }
 
-/* 
-Challenge:
-   1. Finish mapping out these elements using 
-      their grid-areas.
-
- */
-
 .grid-container {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(12, 1fr);
     grid-template-areas: 
-        "nav nav head head head head head head head head head head"
-        "nav nav main main main main main main main aside aside aside"
-        "nav nav main main main main main main main aside aside aside"
-        "nav nav main main main main main main main aside aside aside"
-        "nav nav foot foot foot foot foot foot foot foot foot foot";
+        "n n h h h h h h h h h h"
+        "n n m m m m m m m a a a"
+        "n n m m m m m m m a a a"
+        "n n m m m m m m m a a a"
+        "n n f f f f f f f f f f";
 }
 
 .grid-item {
@@ -31,27 +24,27 @@ Challenge:
     }
     
 header {
-    grid-area: head;
+    grid-area: h;
     background-color: palegoldenrod;
 }
 
 nav {
-    grid-area: nav;
+    grid-area: n;
     background-color: lightcoral;
 }
 
 main {
-    grid-area: main;
+    grid-area: m;
     background-color: lightgreen;
 }
 
 aside {
-    grid-area: aside;
+    grid-area: a;
     background-color: lightgray;
 }
 
 footer {
-    grid-area: foot;
+    grid-area: f;
     background-color: gold;
 }
     
